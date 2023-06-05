@@ -69,23 +69,30 @@ while True:
 		print("Oops! That was no valid number.")
 		break
 
-aux = 0
-if x1>x2:
-	aux=x1
-	x1=x2
-	x2=aux
+while True:
+	try:
+		aux = 0
+		if x1>x2:
+			aux=x1
+			x1=x2
+			x2=aux
 
-print("x1 = "+str(x1))
-print("x2 = "+str(x2))
+		print("x1 = "+str(x1))
+		print("x2 = "+str(x2))
 
-if(typeOf==1):
-	print("(-∞, "+str(x1)+"] U ["+str(x2)+", ∞)")
+		if(typeOf==1):
+			print("(-∞, "+str(x1)+"] U ["+str(x2)+", ∞)")
 
-if(typeOf==2):
-	print("[ "+str(x1)+" , "+str(x2)+" ]")
+		if(typeOf==2):
+			print("[ "+str(x1)+" , "+str(x2)+" ]")
 
-if(typeOf==3):
-	print("(-∞, "+str(x1)+") U ("+str(x2)+", ∞)")	
+		if(typeOf==3):
+			print("(-∞, "+str(x1)+") U ("+str(x2)+", ∞)")	
 
-if(typeOf==4):
-	print("( "+str(x1)+" , "+str(x2)+" )")
+		if(typeOf==4):
+			print("( "+str(x1)+" , "+str(x2)+" )")
+		break
+	except ValueError:
+		print("Exit program.")
+		break
+
