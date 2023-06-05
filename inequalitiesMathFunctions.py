@@ -79,13 +79,13 @@ print("x1 = "+str(x1))
 print("x2 = "+str(x2))
 
 if(typeOf==1):
-	print("(-∞, "+x1+"] U ["+x2+", ∞)")
+	print("(-∞, "+str(x1)+"] U ["+str(x2)+", ∞)")
 
 if(typeOf==2):
-	print("[ "+x1+" , "+x2+" ]")
+	print("[ "+str(x1)+" , "+str(x2)+" ]")
 
 if(typeOf==3):
-	print("(-∞, "+x1+") U ("+x2+", ∞)")	
+	print("(-∞, "+str(x1)+") U ("+str(x2)+", ∞)")	
 
 if(typeOf==4):
-	print("( "+x1+" , "+x2+" )")
+	print("( "+str(x1)+" , "+str(x2)+" )")
